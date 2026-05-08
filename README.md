@@ -637,15 +637,29 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 
 ---
 
-## 🛠 동작 환경
+## 🛠 동작 환경 · Supported Environments
 
-| 환경 | 지원 | 비고 |
-|---|---|---|
-| **Claude Code CLI** | ✅ | `~/.claude/skills/` 자동 인식 |
-| **Claude.ai 웹** | ✅ | Projects 첨부 또는 개별 업로드 |
-| **Claude.ai 모바일 (iOS/Android)** | ✅ | Projects 동기화로 사용 |
-| **Claude Desktop** | ✅ | Claude Code 연동 사용 |
-| **API (직접 호출)** | ⚠️ | 시스템 프롬프트로 변환 필요 |
+본 스킬 패키지는 Claude의 **모든 주요 사용 표면(surface)** 에서 동작하도록 설계되었습니다.
+*This skill pack is designed to run across **every major Claude surface**.*
+
+| 환경 / Environment | 지원 / Support | 사용 방식 / How it works |
+|---|:---:|---|
+| **Claude Code CLI** (터미널 / terminal) | ✅ | `~/.claude/skills/`에 자동 인식 — `install.sh`가 심볼릭 링크 생성 후 Claude Code 재시작 시 활성화 / *Auto-detected at `~/.claude/skills/`. `install.sh` symlinks them; restart Claude Code to activate.* |
+| **Claude.ai 웹 / Web** | ✅ | **Projects 첨부** 또는 **개별 ZIP 업로드** — `package.sh`로 만든 `dist/sermon-*.zip`을 끌어다 놓기 / *Attach to a **Project** or upload **individual ZIPs** built by `package.sh`.* |
+| **Claude.ai 모바일 / Mobile (iOS · Android)** | ✅ | 웹에서 등록한 **Project가 모바일에 자동 동기화** — 즉시 호출 가능 / *Projects registered on web sync **automatically** to mobile — invoke instantly.* |
+| **Claude Desktop (macOS · Windows)** | ✅ | Claude Code CLI 연동을 통해 사용 — 또는 Claude.ai 웹과 동일한 Projects 흐름 / *Via the bundled Claude Code integration, or the same Project flow as web.* |
+| **API 직접 호출 / Direct API** | ⚠️ | **`SKILL.md` 본문을 시스템 프롬프트로 변환**하여 사용 — 자동 트리거는 없음 / *Convert `SKILL.md` bodies into **system prompts**; **no auto-trigger** in raw API.* |
+
+---
+
+### 권장 환경 / Recommended setup
+
+- **개인 데일리 작업 / Daily personal use** — Claude Code CLI 설치 후 모든 스킬을 자동 활성화 / *Install via Claude Code CLI for auto-activation of all skills.*
+- **팀·교회 공유 / Team or church sharing** — Claude.ai의 한 Project에 ZIP 묶음을 올려 권한 멤버가 함께 사용 / *Upload the bundle ZIP to a single Claude.ai Project and share with members.*
+- **이동 중 빠른 사용 / On the move** — 모바일 Claude.ai에서 동기화된 Project로 호출 / *Use mobile Claude.ai with the synced Project.*
+
+> 💡 **Claude.ai가 처음**이신 경우 — 무료 플랜에서도 Projects 첨부가 가능하며, Pro/Max 플랜이면 첨부 용량과 컨텍스트가 더 넉넉합니다.
+> *New to Claude.ai? Project attachments work on the free tier; Pro/Max plans give larger attachment quotas and context.*
 
 ---
 
