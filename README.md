@@ -4,7 +4,7 @@
 
 **한국 목회자·신학생·진지한 평신도를 위한 Claude 성경연구 및 설교준비 도우미 스킬 모음**
 
-20개의 통합 설교 준비 스킬 · Claude.ai 웹/앱 + Claude Code CLI 동시 지원
+20개의 통합 설교준비 및 성경연구 스킬 · Claude.ai 웹/앱 + Claude Code CLI 동시 지원
 
 [![Skills](https://img.shields.io/badge/skills-20-blue)](./skills)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
@@ -19,7 +19,7 @@
 
 ## 📌 한 줄 요약
 
-> **본문 분석부터 설교문 작성, 회중 반응 시뮬레이션까지** — 설교 준비 전 과정을 Claude와 함께 수행하는 통합 스킬 패키지.
+> **성경 본문 분석과 연구부터 설교문 작성, 회중 반응 시뮬레이션까지** — 설교 준비 전 과정을 Claude와 함께 수행하는 통합 스킬 패키지.
 
 ---
 
