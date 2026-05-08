@@ -549,35 +549,91 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 
 ---
 
-## 🗺 추천 워크플로우
+## 🗺 추천 워크플로우 · Recommended Workflow
 
-설교 준비를 처음부터 끝까지 진행할 때 권장 순서:
+설교 준비를 **처음부터 끝까지** 진행할 때 권장 순서입니다.
+*The full pipeline from blank page to a pulpit-ready sermon.*
+
+### 기본 흐름 / Default flow
 
 ```
-[입구]      sermon-topic-message-coach            (주제·메시지 정립)
+[입구 / Entry]
+  sermon-topic-message-coach       핵심 메시지 정립 / Define the thesis
    ↓
-[본문 분석] sermon-text-analysis-multimethod       (7가지 분석법 자동)
-            sermon-bible-dictionary                (단어·인물·지명)
-            sermon-multi-bible-version-compare    (번역본 비교)
-            sermon-textual-criticism              (사본 비교, 필요 시)
+[본문 분석 / Text Analysis]
+  sermon-text-analysis-multimethod      7가지 분석 자동 / 7 auto-methods
+  sermon-bible-dictionary               단어·인물·지명 / Words, names, places
+  sermon-multi-bible-version-compare    번역본 비교 / Translation compare
+  sermon-textual-criticism              사본 비교(선택) / MS compare (optional)
    ↓
-[배경]      sermon-history-culture-geo-context     (시대 배경 재구성)
-            sermon-topic-research-multidisciplinary (현대 학제간 자료)
+[배경 / Context]
+  sermon-history-culture-geo-context        시대 배경 재구성 / Historical setting
+  sermon-topic-research-multidisciplinary   학제간 자료 / Multidisciplinary data
    ↓
-[신학]      sermon-augustine/luther/calvin/bavinck/lloyd-jones-coaching
-            (택일 또는 복수)
+[신학 / Theology]
+  sermon-augustine / luther / calvin-institutes / bavinck / lloyd-jones-coaching
+  택일 또는 복수 / Pick one or more
    ↓
-[작성]      sermon-emotive-writing-coach           (글쓰기 코칭)
-            sermon-doctrinal-planner              (교리설교 시)
-            sermon-calvin-style-insight           (강해 설교 시)
+[작성 / Writing]
+  sermon-emotive-writing-coach     글쓰기 코칭 / Writing craft coach
+  sermon-doctrinal-planner         교리설교 시 / For doctrinal genre
+  sermon-calvin-style-insight      강해 설교 시 / For expository genre
    ↓
-[검증]      sermon-audience-feedback-persona       (회중 8명 반응)
+[검증 / Validation]
+  sermon-audience-feedback-persona    회중 8인 반응 / 8 personas react
    ↓
-[QT/연간]  sermon-qt-original-text-based          (큐티 변환)
-            sermon-planner-52week                 (연간 계획)
+[QT·연간 / QT & Year-Plan]
+  sermon-qt-original-text-based    큐티 변환 / QT conversion
+  sermon-planner-52week            연간 계획 / 52-week plan
 ```
+
+---
+
+### 단계별 산출물 / What each stage produces
+
+| 단계 / Stage | 산출물 / Output | 다음 단계 신호 / Hand-off trigger |
+|---|---|---|
+| **입구 / Entry** | 핵심 메시지 한 문장 + 본문 후보 + 설교 형식 / *1-sentence thesis + candidate texts + sermon form* | 메시지·본문 확정 / *Thesis & text fixed* |
+| **본문 분석 / Text** | 7+10가지 분석 + 단어·번역·사본 비교 / *7+10 methods + word/translation/MS compare* | 본문 의미 명확 / *Meaning clarified* |
+| **배경 / Context** | 시대 배경 + 주제 학제간 자료 / *Period setting + multidisciplinary data* | 회중-본문 다리 확보 / *Bridge to congregation built* |
+| **신학 / Theology** | 교부·종교개혁·근대 개혁주의 시각 / *Patristic / Reformation / neo-Calvinist depth* | 신학적 골격 완성 / *Theological frame done* |
+| **작성 / Writing** | 설교문 초안 / *Sermon draft* | 초안 완료 / *Draft complete* |
+| **검증 / Validation** | 8 페르소나 회중 반응 / *8-persona pew reactions* | 강단 준비 완료 / *Pulpit-ready* |
+| **QT·연간 / QT & Year** | 큐티 변환 또는 52주 계획 / *QT or 52-week plan* | 새 사이클 시작 / *New cycle begins* |
+
+---
+
+### 변형 시나리오 / Common variations
+
+**1. 강해 설교 시리즈 / Expository sermon series**
+
+- 입구 → 본문 분석(전체) → 배경 → 칼빈/MLJ 코칭 → `sermon-calvin-style-insight` → 검증
+- *Entry → Full Text Analysis → Context → Calvin/MLJ coaching → `sermon-calvin-style-insight` → Validation*
+
+**2. 교리설교 / Doctrinal sermon**
+
+- 입구 → 본문 분석(요약) → `sermon-doctrinal-planner`(주축) → 어거스틴/루터/칼빈/바빙크 코칭 → 작성 → 검증
+- *Entry → Brief Text Analysis → `sermon-doctrinal-planner` (core) → Augustine/Luther/Calvin/Bavinck coaching → Writing → Validation*
+
+**3. 절기 설교 (부활절·성탄절·맥추감사절) / Liturgical (Easter / Christmas / Harvest)**
+
+- `sermon-planner-52week`로 절기 위치 확인 → 본문 분석 → 배경 → 작성 → 검증
+- *`sermon-planner-52week` to anchor the liturgical date → Text Analysis → Context → Writing → Validation*
+
+**4. 새벽기도·QT / Dawn prayer & devotion**
+
+- 본문 선택 → `sermon-qt-original-text-based`(주축) → 필요 시 단어·배경 보강
+- *Pick the passage → `sermon-qt-original-text-based` (core) → Augment with dictionary/context if needed*
+
+**5. 시사 주제 설교 (AI·환경·외로움 등) / Contemporary-issue preaching (AI, environment, loneliness, etc.)**
+
+- 입구 → `sermon-topic-research-multidisciplinary`(주축) → 본문 선정 → 본문 분석 → 작성 → 검증
+- *Entry → `sermon-topic-research-multidisciplinary` (core) → Pick the text → Text Analysis → Writing → Validation*
+
+---
 
 전체 사용 예시는 [`examples/USAGE_EXAMPLES.md`](./examples/USAGE_EXAMPLES.md)에 7가지 시나리오로 정리해 두었습니다.
+*Full end-to-end examples are in [`examples/USAGE_EXAMPLES.md`](./examples/USAGE_EXAMPLES.md) — 7 scenarios.*
 
 ---
 
