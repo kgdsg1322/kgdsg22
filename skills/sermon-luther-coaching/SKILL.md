@@ -57,9 +57,10 @@ description: 마틴 루터(Martin Luther, 1483–1546)의 신학과 설교론을
 
 ### 1. 이신칭의 (Sola Fide / Justification by Faith Alone)
 - 죄인이 의롭다 함을 받는 것은 *오직 그리스도를 믿는 믿음으로*. 행위·공로 무관
-- 루터의 *결정적 발견* — 1517년 이전, 시편·로마서 강의 중 *하나님의 의*가 *하나님께서 우리에게 전가하시는 의*임을 깨달음 (Tower Experience)
+- 루터의 *결정적 발견* — 1545년 자전적 회상(*라틴어 저작 1권 서문*, WA 54, 179-187)에서 시편 묵상 중 *하나님의 의*가 *하나님께서 우리에게 주시는 수동적 의(iustitia passiva)*임을 깨달았다 진술 (이른바 *Turmerlebnis*·Tower Experience)
+- **시기 학계 논쟁**: 루터 본인은 정확한 연도 미명시. 학자에 따라 1513-1519년 사이로 추정(Karl Holl은 1513-15, Heiko Oberman·Bernhard Lohse는 1518-19에 가깝게 본다). 본 스킬은 *"시편·로마서 강의 시기"*로 표현하고 단정적 연도 못박지 않음
 - 핵심 본문: 롬 1:17, 갈 2:16, 갈 3:11, 합 2:4
-- 인용 자료: 『갈라디아서 강해』(1535), 『기독자의 자유』(1520)
+- 인용 자료: 『갈라디아서 강해』(1531년 강의·1535년 출판), 『기독자의 자유』(1520)
 - *모든 정통 개신교 교파가 함께 서 있는 종교개혁 핵심 교리*
 
 ### 2. 오직 은혜 (Sola Gratia)
@@ -100,7 +101,7 @@ description: 마틴 루터(Martin Luther, 1483–1546)의 신학과 설교론을
 ### 9. 의인이자 동시에 죄인 (Simul Iustus et Peccator)
 - 신자는 *그리스도 안에서 의롭다 함을 받았으나* 동시에 *내 안에 죄성이 잔존*
 - 칭의(법정적·즉각·전적)와 성화(과정적·점진·부분적)의 동시성
-- 자료: 『로마서 강해』(1515-16)
+- 자료: 『로마서 강해』(1515-16) WA 56, 269-272 / 『갈라디아서 강해』(1535) LW 26, 232-233. 정확한 라틴어 정형 문장을 한 줄로 단정 인용하기보다 *강해 곳곳에 흐르는 사상*으로 다룸이 학계 표준
 - *교파별 차이*: 루터파는 죽을 때까지 *simul* 강조 / 일부 웨슬리언 전통은 그리스도인의 완전(Christian Perfection) 가능성 주장 / 개혁주의는 점진적 성화이되 완전성에는 도달 X
 
 ### 10. 만인제사장직 (Priesthood of All Believers)
@@ -125,24 +126,24 @@ description: 마틴 루터(Martin Luther, 1483–1546)의 신학과 설교론을
 본 스킬이 인용할 수 있는 루터 저작 목록. *정확히 아는 것만* 인용한다. 모르는 페이지·문장은 일반적 방향만 진술하고 *직접 확인 권장* 명시.
 
 ### 종교개혁 초기 (1517-1521)
-- **95개 조항** (Ninety-five Theses, 1517) — 면죄부 비판
-- **하이델베르크 논쟁** (Heidelberg Disputation, 1518) — 십자가 신학 정식화
-- **독일 그리스도인 귀족에게** (To the Christian Nobility of the German Nation, 1520) — 만인제사장직·교회 개혁
-- **교회의 바벨론 포로** (The Babylonian Captivity of the Church, 1520) — 7성례 비판, 2성례(세례·성찬)만 인정
-- **기독자의 자유** (The Freedom of a Christian, 1520) — 이신칭의·복음의 자유
-- **보름스 의회** (Diet of Worms, 1521) — *"여기 내가 서 있다, 달리 어쩔 수 없다"*
+- **95개 조항** (Ninety-five Theses / Disputatio pro declaratione virtutis indulgentiarum, 1517년 10월 31일) — 면죄부 비판. WA 1, 233-238; LW 31, 17-33. 1번 조항(라틴어): *"Dominus et magister noster Iesus Christus dicendo 'Poenitentiam agite etc.,' omnem vitam fidelium poenitentiam esse voluit."*
+- **하이델베르크 논쟁** (Heidelberg Disputation, 1518년 4월 26일) — 십자가 신학 정식화. WA 1, 353-374; LW 31, 35-70
+- **독일 그리스도인 귀족에게** (An den christlichen Adel, 1520년 8월) — 만인제사장직·교회 개혁. WA 6, 404-469; LW 44, 123-217
+- **교회의 바벨론 포로** (De captivitate Babylonica, 1520년 10월) — 7성례 비판, 2성례(세례·성찬)만 인정. WA 6, 497-573; LW 36, 3-126
+- **기독자의 자유** (Von der Freiheit eines Christenmenschen, 1520년 11월) — 이신칭의·복음의 자유. WA 7, 12-73; LW 31, 327-377
+- **보름스 의회** (Diet of Worms, 1521년 4월 17-18일) — 4월 18일 답변: *"성경의 증거나 명백한 이성으로 확신되지 않는 한... 내 양심은 하나님의 말씀에 사로잡혀 있습니다... 하나님이여 도우소서. 아멘."* 전통적으로 전해지는 결구 *"Hier stehe ich, ich kann nicht anders"*("여기 내가 서 있다, 달리 어쩔 수 없다")는 1521년 인쇄본(*Acta et res gestae*)에서 등장. 일부 학자는 후대 첨가 가능성 제기하나 학계 다수는 *답변 전체 정신과 일치하는 정통 인용*으로 인정
 
 ### 교리·논쟁 시기 (1525-1530)
-- **노예의지론** (De Servo Arbitrio / On the Bondage of the Will, 1525) — 에라스무스 반박, 루터 자신이 가장 중요시한 저작
+- **노예의지론** (De Servo Arbitrio / On the Bondage of the Will, 1525년 12월) — 에라스무스 *De Libero Arbitrio*(1524) 반박. 루터 자신이 1537년 7월 9일 카피토에게 보낸 편지(WA Br 8, 99)에서 "내 책 중 정당하다고 인정할 만한 것은 『노예의지론』과 『요리문답』 뿐"이라 평가
 - **소요리문답** (Small Catechism, 1529) — 가정·평신도용
 - **대요리문답** (Large Catechism, 1529) — 목회자·교사용
 - **아우크스부르크 신앙고백** (Augsburg Confession, 1530) — 멜랑히톤 작성, 루터 승인. 루터파 표준 신앙고백
 
 ### 후기 (1535-1546)
-- **갈라디아서 강해** (Lectures on Galatians, 1535) — 이신칭의의 정점 강해
-- **창세기 강해** (Lectures on Genesis, 1535-1545) — 임종 직전까지의 평생 작업
-- **탁상담화** (Table Talk / Tischreden) — 제자들이 기록한 일상 대화 (*인용 시 신중* — 루터 자신의 정제된 글이 아님)
-- **다양한 설교집** — 루터는 평생 약 7,000편 이상 설교, 약 2,300편 보존
+- **갈라디아서 강해** (Lectures on Galatians) — 1531년 7-12월 비텐베르크에서 강의, 1535년 출판(제자 게오르크 뢰러 편집). 이신칭의의 정점 강해. WA 40/1-2; LW 26-27
+- **창세기 강해** (Lectures on Genesis, 1535-1545) — 임종 직전까지의 평생 작업. WA 42-44; LW 1-8
+- **탁상담화** (Table Talk / Tischreden) — 제자들(베이트 디트리히, 안톤 라우터바흐 등)이 기록한 일상 대화. WA TR 1-6. *인용 시 신중* — 루터 자신의 정제된 글이 아니며 *cum grano salis* 인용 원칙
+- **다양한 설교집** — 루터의 평생 설교는 학자에 따라 약 4,000-7,000편 추산. 보존된 설교는 약 2,300편. 주요 모음: *Kirchenpostille*(1521-27), *Hauspostille*(1531-35)
 
 ### 한국어 자료
 - 『기독자의 자유』 — 다수 번역본
@@ -152,6 +153,21 @@ description: 마틴 루터(Martin Luther, 1483–1546)의 신학과 설교론을
 - 『노예의지론』 — 컨콜디아사
 
 정확한 권·페이지 인용이 결정적인 경우 사용자에게 *직접 자료 확인을 권장*한다.
+
+## references/ 자료 운영
+
+본 스킬의 `references/` 폴더에는 환각 방지·정확성 보장을 위한 검증된 1차 자료가 정리되어 있다. 인용·연대·교파 비교 응답을 산출할 때 반드시 다음 자료를 우선 참조한다:
+
+- `references/luther-bibliography-verified.md` — 루터 저작 출판 정보(WA·LW 권·페이지), 정확한 라틴어/독일어 인용
+- `references/key-quotes-and-themes.md` — 12 핵심 신학별 검증된 1차 자료 인용 풀(quote pool). 본 자료에 *없는* 단정적 인용은 회피
+- `references/common-misreadings.md` — 가짜 인용(예: "내일 종말이 와도 사과나무를 심겠다") 및 곡해 명제(만인제사장직=목회자 부정, 두 왕국=세속화, 이신칭의=행위 부정 등) 차단 목록
+- `references/denominational-comparison.md` — 7개 신학 영역의 루터파 vs 개혁주의·웨슬리언·재세례파·로마 가톨릭·정교회 비교표
+
+산출물 검증 절차:
+1. 인용·연대 진술 시 `luther-bibliography-verified.md`·`key-quotes-and-themes.md`와 대조
+2. 사용자가 자주 듣는 격언을 인용하면 `common-misreadings.md`로 가짜 인용 여부 점검
+3. 비교 질문(유형 D) 시 `denominational-comparison.md`의 신앙고백·1차 자료 인용 기반으로 균형 답변
+4. 위 자료에 없는 단정적 인용은 *모름을 인정하고 일반적 방향만 진술*
 
 ## 루터 설교의 핵심 특징
 
@@ -305,7 +321,7 @@ description: 마틴 루터(Martin Luther, 1483–1546)의 신학과 설교론을
 
 ## 오류·예외 처리
 
-- **존재하지 않는 루터 저작·인용**: 정중히 *그 자료의 1차 출처가 확인되지 않는다*고 명시. 추측으로 채우지 않음. 흔한 *루터의 가짜 인용*("종말이 와도 사과나무를 심겠다" 등)은 *루터의 진짜 말이 아닌 후대 전승*임을 명시.
+- **존재하지 않는 루터 저작·인용**: 정중히 *그 자료의 1차 출처가 확인되지 않는다*고 명시. 추측으로 채우지 않음. 흔한 *루터의 가짜 인용*("내일 종말이 와도 사과나무를 심겠다" — 1944년 독일 고백교회 회람문에서 처음 등장한 익명 격언이 루터에게 잘못 귀속된 것. Martin Schloemann 1994 연구 참조)은 *루터의 진짜 말이 아닌 후대 전승*임을 명시. `references/common-misreadings.md` 참조.
 
 - **이단적 루터 해석**: 신천지·통일교·일부 신학적 자유주의의 루터 곡해는 *옹호 X*. 정통 루터 학계 입장 객관 소개.
 
