@@ -360,12 +360,22 @@ cd <여기에-경로> \
 
 ## 📖 스킬 상세 가이드 · Skill Reference Guide
 
-각 스킬을 **무엇이냐(What) · 언제 쓰나(When) · 무엇을 주는가(Key features)** 세 항목으로 한국어와 영어 병기로 정리했습니다.
-Each skill is documented in three sections — *What it is*, *When to use*, *Key features* — bilingually (Korean / English).
+각 스킬을 **무엇이냐(What) · 언제 쓰나(When) · 무엇을 주는가(Key features) · v1.1.0 정밀 검증(Verification)** 네 항목으로 한국어와 영어 병기로 정리했습니다.
+Each skill is documented in four sections — *What it is*, *When to use*, *Key features*, *Verification (v1.1.0)* — bilingually (Korean / English).
+
+> **🔬 v1.1.0 — 모든 카드는 정밀 검증 사이클 결과를 반영하여 보강되었습니다.**
+> *Every card below reflects the v1.1.0 precision-verification cycle (2026-05-13).*
+>
+> - 카드 하단 **`v1.1.0 정밀 검증 / Verification`** 단락에서 ① 검증 라운드 수 ② 참조 자료(references) ③ 할루시네이션 방지 규약을 확인할 수 있습니다. */ The Verification block at the foot of each card lists (1) the number of verification rounds, (2) the references shipped with the skill, and (3) the anti-hallucination protocol.*
+> - 카드 제목 옆 `(NEW in v1.1.0)` 배지는 **v1.1.0에서 신설된 스킬**(`sermon-bible-history-matcher`), `(+references in v1.1.0)` 배지는 **v1.1.0에서 references 폴더가 새로 추가된 8개 스킬**입니다. */ A `(NEW in v1.1.0)` badge marks the one skill added this cycle (`sermon-bible-history-matcher`); `(+references in v1.1.0)` marks the eight skills that received a new references folder.*
+> - 전체 변경 내역은 [`CHANGELOG.md`](./CHANGELOG.md) 참고. */ Full change log in [`CHANGELOG.md`](./CHANGELOG.md).*
 
 ---
 
 ### 🔍 카테고리 1. 본문 분석 & 원어 · Text Analysis & Original Languages
+
+*v1.1.0 검증 4/5 · 신규 references 0개 · (`sermon-greek-grammar-machen`은 후속 검증 사이클 예정)*
+*Verified 4/5 in v1.1.0 · 0 new references · (`sermon-greek-grammar-machen` deferred to a later cycle)*
 
 #### 1. `sermon-text-analysis-multimethod`
 
@@ -382,6 +392,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 7가지 자동 분석 + 10가지 메뉴 분석 (총 17종) / *7 auto-runs + 10 menu-driven (17 total).*
 - 가짜 해석·이단적 재해석 자동 식별·필터링 / *Automatic detection of heterodox interpretations.*
 - 다른 sermon 스킬을 한 화면에 종합하는 메타 도구 / *Aggregates other sermon skills into one panel.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT V1·V2·V3 3라운드 정밀 검증. / *3 verification rounds (TEST-REPORT V1/V2/V3).*
+- **참조 자료 / References** — references 5종 (`additional-methods.md`·`false-interpretations-catalog.md`·`verified-citations.md` + `data/`·`tools/`). / *5 references including the false-interpretations catalog and verified-citations.*
+- **할루시네이션 방지 / Anti-hallucination** — 가짜 어원·풍유·아전인수 자동 식별이 본 스킬의 기본 기능이며, v1.1.0에서 카탈로그를 대규모 보강. / *Pseudo-etymology, allegory, and forced applications are core filters — the catalog was substantially expanded in v1.1.0.*
 
 ---
 
@@ -401,6 +416,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 성경 전체에서의 용례 비교 / *Cross-canonical usage comparison.*
 - 신학적 함의까지 한 응답에 통합 / *Theological significance integrated.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT V1·ROUND2·ROUND3·ROUND4·ROUND5 + `round5_runs/` 실행 로그까지 5라운드. / *5 verification rounds (V1, ROUND2–5) with full ROUND5 run logs preserved.*
+- **참조 자료 / References** — 별도 references 폴더는 없으며 SKILL.md 본문이 인물·지명·단어 분석 표준을 직접 명문화. / *No separate references folder; SKILL.md itself encodes the standard for persons/places/words.*
+- **할루시네이션 방지 / Anti-hallucination** — 검증 라운드에서 발견된 어원·용례 오류를 SKILL.md에 반영하여 출처 표기·원어 음역 규약을 강화. / *Etymology and usage errors found during verification were folded back into SKILL.md, tightening citation and transliteration rules.*
+
 ---
 
 #### 3. `sermon-textual-criticism`
@@ -418,6 +438,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 사본별 이독(variant readings) 정리 / *Variant readings tabulated by manuscript.*
 - 본문비평 4원칙(어려운 독법·짧은 독법·외부증거·내부증거) 적용 / *Applies the four canons of textual criticism.*
 - 번역본 비교(`sermon-multi-bible-version-compare`)보다 **한 단계 더 깊은** 사본 자체 분석 / *Goes one layer deeper than translation comparison.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + VERIFICATION-DETAIL V1·V2·V3 4건의 본문비평 정밀 검증. / *4 verification documents (TEST-REPORT + VERIFICATION-DETAIL V1/V2/V3).*
+- **참조 자료 / References** — `references/manuscript-facts.json` — 주요 사본 메타데이터(연대·소장처·핵심 이독)를 구조화 데이터로 동봉. / *`manuscript-facts.json` ships structured metadata (date, repository, key variants) for major manuscripts.*
+- **할루시네이션 방지 / Anti-hallucination** — 사본 인용은 manuscript-facts.json에 등재된 사실만 허용, 미합의 이독은 외부·내부 증거 양면을 모두 표기. / *Manuscript citations are bounded by `manuscript-facts.json`; contested readings list both external and internal evidence.*
 
 ---
 
@@ -437,6 +462,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 번역 선택 차이의 신학적 함의 분석 / *Theological commentary on translator choices.*
 - 5절 이하 단일 본문 단위에 최적화 / *Optimized for ≤5-verse units.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + ROUND-4-OUTPUTS 2건의 다층 비교 검증. / *2 verification artifacts (TEST-REPORT + ROUND-4-OUTPUTS).*
+- **참조 자료 / References** — references 7종 (`anti-hallucination-checklist.md`·`common-misreadings.md`·`lxx-mt-numbering.md`·`methodology.md`·`quran-verified-citations.md`·`talmud-verified-citations.md`·`vulgata-facts.md`) — 카테고리 1에서 가장 풍부. / *7 references — the richest in this category — covering LXX/MT numbering, Vulgate facts, and verified Quran/Talmud citations.*
+- **할루시네이션 방지 / Anti-hallucination** — 코란·탈무드·불가타 인용은 verified 카탈로그 외 임의 출처 차단, LXX/MT 절 번호 불일치 자동 경고. / *Quran/Talmud/Vulgate citations are bounded by the verified catalogs; LXX/MT versification mismatches auto-flagged.*
+
 ---
 
 #### 5. `sermon-greek-grammar-machen`
@@ -455,9 +485,17 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 33강 순차 학습 또는 주제별 검색 양방향 / *Sequential by lesson, or freeform by topic.*
 - 퀴즈·연습문제 지원 / *Quiz and exercise support.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — v1.1.0 사이클에서는 별도 라운드 미실행 — Machen 교과서 자체가 표준이므로 후속 사이클에서 신약 용례 정확성 회귀 테스트 예정. / *No round in this cycle — Machen's textbook is the standard; a regression cycle for NT usage citations is planned.*
+- **참조 자료 / References** — 별도 references 폴더 미신설, SKILL.md가 33강 구조를 직접 명문화. / *No references folder yet; the 33-lesson outline is encoded in SKILL.md.*
+- **할루시네이션 방지 / Anti-hallucination** — 다음 사이클에서 신약 용례·예문 검증 카탈로그 추가가 [Unreleased] 계획에 등재. / *A NT example/usage verification catalog is on the [Unreleased] roadmap.*
+
 ---
 
 ### 🏛 카테고리 2. 신학 코칭 · Theological Coaching
+
+*v1.1.0 검증 5/5 · 신규 references 2개 (`sermon-luther-coaching`·`sermon-lloyd-jones-coaching`)*
+*Verified 5/5 in v1.1.0 · 2 new reference folders (`sermon-luther-coaching`, `sermon-lloyd-jones-coaching`)*
 
 #### 6. `sermon-augustine-coaching`
 
@@ -475,9 +513,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 평이체·중간체·장엄체 3문체 제안 / *Three rhetorical registers (plain/middle/grand).*
 - 칼빈·MLJ 코칭과 짝을 이루는 고대 교부 영역 / *Pairs with Calvin/MLJ coaching, owns the patristic axis.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — `SKILL_TEST_RESULTS_V3_2026-05-16.md` 1라운드 정밀 검증. / *1 verification round (V3, 2026-05-16).*
+- **참조 자료 / References** — 별도 references 폴더는 미신설, 1차 자료(고백록·하나님의 도성·기독교 교양·삼위일체론)는 SKILL.md 본문에 인용 표준 명문화. / *No references folder; SKILL.md encodes the citation standard for Confessions, City of God, De Doctrina, De Trinitate.*
+- **할루시네이션 방지 / Anti-hallucination** — 검증 라운드에서 발견된 어거스틴 1차 자료 표기 오류를 SKILL.md에 반영, 추측·사후 해석 회피 규약을 강화. / *Patristic-source citation errors found in the round were folded back into SKILL.md; the no-speculation rule was reinforced.*
+
 ---
 
-#### 7. `sermon-luther-coaching`
+#### 7. `sermon-luther-coaching`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — **마틴 루터(1483–1546)** 의 신학과 설교론을 토대로 한 코칭 스킬. 이신칭의·오직 은혜·오직 성경·만인제사장직·법과 복음·노예의지·십자가 신학(*theologia crucis*)·*simul iustus et peccator* + 평이한 회중 언어·복음의 직설.
@@ -492,6 +535,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 본문 ↔ 루터 텍스트 연결 / *Passage ↔ Lutheran corpus mapping.*
 - 법/복음 구분의 설교 적용 / *Applies law/gospel distinction in delivery.*
 - 교파 중립적 — 장로교·감리교·성결교·침례교·성공회 어디서든 사용 가능 / *Denominationally neutral.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + R1·R2·R3 다라운드 정밀 검증 4건. / *4 verification artifacts (TEST-REPORT + R1/R2/R3).*
+- **참조 자료 / References** — v1.1.0 신규 references 4종 (`luther-bibliography-verified.md`·`key-quotes-and-themes.md`·`denominational-comparison.md`·`common-misreadings.md`). / *4 new references in v1.1.0: verified bibliography, key quotes and themes, denominational comparison, common misreadings.*
+- **할루시네이션 방지 / Anti-hallucination** — 95개 조항·『기독자의 자유』·『노예의지론』·갈라디아서 강해 인용은 검증 서지에만 한정, 통상 오독 카탈로그로 자가 점검. / *Citations from the 95 Theses, Freedom of a Christian, Bondage of the Will, and Galatians lectures are bounded by the verified bibliography; the misreadings catalog drives self-check.*
 
 ---
 
@@ -511,6 +559,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 1559판 4권 80장 구조에 따른 순차 학습 / *Sequential walk-through of all 80 chapters.*
 - 칼빈의 **설교 스타일**은 별도 스킬(`sermon-calvin-style-insight`)이 담당 — 본 스킬은 **신학 본체** / *Calvin's preaching style is a separate skill; this one owns the dogmatic core.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + PROMPT-TEST-REPORT V1·V3·V4·V5·V6 총 6건의 프롬프트 정밀 검증. / *6 verification artifacts (TEST-REPORT + PROMPT-TEST V1/V3/V4/V5/V6).*
+- **참조 자료 / References** — references 3종 (`key-quotes-by-chapter.md`·`common-misreadings.md`·`scholar-traditions.md`) — 4권 80장 핵심 인용을 장 단위로 보강. / *3 references — key quotes mapped chapter-by-chapter, common misreadings, scholar traditions.*
+- **할루시네이션 방지 / Anti-hallucination** — 1559년 최종판 본문만 1차 자료로 인정, TULIP·이중예정·그리스도 연합은 *key-quotes-by-chapter.md* 등재 인용만 허용. / *Only the 1559 final edition counts as primary; quotations for TULIP, double predestination, union with Christ are bounded by `key-quotes-by-chapter.md`.*
+
 ---
 
 #### 9. `sermon-bavinck-coaching`
@@ -529,9 +582,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 『개혁교의학』 외 *Our Reasonable Faith*, *Christian Worldview* 등으로 확장 / *Extends to other Bavinck works as needed.*
 - 교파 중립적 / *Denominationally neutral.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + TEST-REPORT-V3 2라운드 정밀 검증. / *2 verification rounds (TEST-REPORT + V3).*
+- **참조 자료 / References** — references 3종 (`bavinck-bibliography-verified.md`·`key-themes-and-sources.md`·`common-misreadings.md`) — v1.1.0에서 핵심 주제·서지 보강. / *3 references with v1.1.0 augmentation of key themes and verified bibliography.*
+- **할루시네이션 방지 / Anti-hallucination** — Reformed Dogmatics 4권 외 인용은 *bavinck-bibliography-verified.md* 등재본만 허용, 답을 찾지 못한 경우 그 사실을 명시. / *Citations outside the 4-volume Dogmatics are bounded by the verified bibliography; "not found in Bavinck" is stated explicitly when applicable.*
+
 ---
 
-#### 10. `sermon-lloyd-jones-coaching`
+#### 10. `sermon-lloyd-jones-coaching`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — **마틴 로이드 존스(MLJ, 1899–1981) "The Doctor"** 의 명저 **『설교와 설교자』(*Preaching and Preachers*, 1971)** 를 토대로 설교자를 코칭하는 스킬. *Logic on Fire(불붙은 논리)*, 진단-처방(diagnosis-prescription) 방식, 부흥(revival) 의존, 강단 우선성, 교리적 설교 회복.
@@ -547,11 +605,19 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 자기 설교의 MLJ적 평가 요청 가능 / *Submit your draft for an MLJ-style critique.*
 - 칼빈식 설교 스킬과 짝을 이루되 중복 회피 / *Pairs with Calvin's style without overlap.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + V2·V3·V4·V5 총 5라운드 다라운드 정밀 검증. / *5 verification rounds (TEST-REPORT + V2/V3/V4/V5).*
+- **참조 자료 / References** — v1.1.0 신규 references 3종 (`mlj-bibliography-verified.md`·`key-themes-and-sources.md`·`common-misreadings.md`). / *3 new references in v1.1.0: verified MLJ bibliography, key themes, common misreadings.*
+- **할루시네이션 방지 / Anti-hallucination** — *Preaching and Preachers*·로마서/에베소서 강해·*Studies in the Sermon on the Mount* 등은 검증 서지에 한정, MLJ 통상 오독("Logic on Fire" 단순화·부흥의 비성령적 환원 등) 자가 점검. / *Citations from Preaching and Preachers, Romans/Ephesians lectures, and Sermon on the Mount are bounded by the verified bibliography; common MLJ misreadings are caught by the catalog.*
+
 ---
 
 ### 🌍 카테고리 3. 배경 & 컨텍스트 · Context & Background
 
-#### 11. `sermon-history-culture-geo-context`
+*v1.1.0 검증 4/4 · 신규 스킬 1개 (`sermon-bible-history-matcher`) · 신규 references 2개 (`sermon-history-culture-geo-context`·`sermon-christian-history-interpreter`)*
+*Verified 4/4 in v1.1.0 · 1 brand-new skill (`sermon-bible-history-matcher`) · 2 new reference folders (`sermon-history-culture-geo-context`, `sermon-christian-history-interpreter`)*
+
+#### 11. `sermon-history-culture-geo-context`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 성경 본문의 **역사적·문화적·지리적·사회적 배경**을 학문적 깊이로 풀어주는 배경 해설 도우미. 고대근동, 이스라엘 왕국, 바벨론 포로기, 페르시아·헬라·로마 시대의 정치·일상·관습·지리·교역로를 종합한다.
@@ -567,9 +633,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 시대별·지역별 학문적 자료 제시 / *Period- and region-specific scholarly references.*
 - `sermon-bible-dictionary`(원어·신학)와 역할 분리 / *Role-separated from Bible-dictionary skill.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT-R1·R2·R3·R4·R5 총 5라운드 정밀 검증. / *5 verification rounds (R1–R5).*
+- **참조 자료 / References** — v1.1.0 신규 references 4종 (`era-timeline-verified.md`·`primary-sources-citation-standard.md`·`scholarly-debates-balanced.md`·`anti-hallucination-checklist.md`). / *4 new references in v1.1.0 covering era timelines, primary-source citation standards, balanced scholarly debates, and an anti-hallucination checklist.*
+- **할루시네이션 방지 / Anti-hallucination** — 시대 연대·지명·관습 진술은 *era-timeline-verified.md* 등재 사실만 허용, 학설 분기점은 *scholarly-debates-balanced.md*에서 다관점으로 균형 인용. / *Period datings and customs are bounded by the verified timeline; contested historical questions are presented multi-perspectivally per `scholarly-debates-balanced.md`.*
+
 ---
 
-#### 12. `sermon-bible-history-matcher`
+#### 12. `sermon-bible-history-matcher`  *(NEW in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 성경의 **인물·사건·본문 내용**을 입력받아 세계사 자료(고고학적 유물·고대 문헌·학술 연구)에서 **동일하게 매칭되는 역사적 사실**을 찾아 제시하는 스킬. *증거가 없으면 주장도 없다*를 절대 원칙으로 삼아 박물관 소장 실물(소장처·카탈로그 번호 명시)·아시리아/바빌로니아/이집트/그리스/로마 1차 문헌·동료심사 학술 컨센서스만 인용한다. 미합의 항목은 `[UNCERTAIN - 학계 미합의]`로 명시.
@@ -585,9 +656,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 모든 매칭에 **신뢰도 등급** 부여 / *Confidence grading for every match.*
 - 추측·전통적 주장·미검증 이론은 `[UNCERTAIN]`으로 분명히 표기 / *Speculation and unverified claims are explicitly flagged `[UNCERTAIN]`.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — v1.1.0에서 신설된 스킬로, TEST-REPORT + V2·V3 총 3건의 신뢰도 검증 동봉. / *Brand-new in v1.1.0 — ships with 3 verification artifacts (TEST-REPORT + V2/V3).*
+- **참조 자료 / References** — references 3종 (`anti-hallucination-checklist.md`·`confirmed-cases.md`·`methodology.md`) — 검증된 매칭 케이스와 방법론 표준이 동봉. / *3 references — verified case catalog, methodology standard, and anti-hallucination checklist — ship with the skill.*
+- **할루시네이션 방지 / Anti-hallucination** — *증거 없으면 주장도 없다*가 본 스킬의 절대 원칙. 박물관 소장 실물(소장처·카탈로그 번호)·아시리아/바빌로니아/이집트/그리스/로마 1차 문헌·동료심사 학술 컨센서스 외 인용 차단. / *"No evidence, no claim" is the absolute rule — only museum artifacts (with repository and catalog ID), ANE/Greek/Roman primary documents, and peer-reviewed consensus are allowed.*
+
 ---
 
-#### 13. `sermon-christian-history-interpreter`
+#### 13. `sermon-christian-history-interpreter`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — **고대부터 현대까지의 역사 사건·인물·사회 흐름**을 기독교적 관점에서 해석하고 신학적 통찰을 주는 학술 도우미. 콘스탄티누스·동서 분열·십자군·종교개혁·30년 전쟁·청교도·대각성·근대 선교·세계대전·**한국 교회사**(개신교 전래·평양 대부흥·신사참배·해방·산업화·민주화)까지.
@@ -601,6 +677,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 **핵심 기능 / Key features**
 - 사실적 정확성·다관점 균형·공신력 있는 출처 3원칙 / *Factual accuracy + multiperspectival balance + credible sources.*
 - 성경 시대 *이후*의 역사를 전담 (성경 시대 자체는 11번 스킬 영역) / *Owns post-biblical history (skill #11 owns the biblical era).*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + TEST-REPORT-v3 총 2라운드 정밀 검증. / *2 verification rounds (TEST-REPORT + v3).*
+- **참조 자료 / References** — v1.1.0 신규 references 4종 (`core-events-verified.md`·`korean-church-history-verified.md`·`historiography-methodology.md`·`anti-hallucination-checklist.md`). / *4 new references in v1.1.0: verified core events, verified Korean church history, historiography methodology, anti-hallucination checklist.*
+- **할루시네이션 방지 / Anti-hallucination** — 한국 교회사(평양 대부흥·신사참배·해방·산업화·민주화)는 *korean-church-history-verified.md* 등재 사실만 인용, 섭리적 해석은 사실 진술과 분리하여 표기. / *Korean church history (Pyongyang Revival, Shinto compulsion, liberation, industrialization, democratization) is bounded by the verified catalog; providential readings are kept separate from factual claims.*
 
 ---
 
@@ -620,11 +701,19 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 필요 시 웹 검색으로 최신 통계·뉴스 보강 / *Augments with web search for current data.*
 - 본문·교리·문체 외부의 "주제 자료" 영역 전담 / *Owns the "topic research" axis outside text/doctrine/style.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + TEST-RUN-ROUND1~4 + ROUND5(케이스 10) + ROUND6(케이스 10) **총 25건** — v1.1.0 사이클 최다 라운드. / *25 verification artifacts (TEST-REPORT + ROUND1–4 + 10 ROUND5 cases + 10 ROUND6 cases) — the largest verification footprint in the v1.1.0 cycle.*
+- **참조 자료 / References** — references 2종 (`verified-facts.md`·`verified-facts-evidence.md`) — 11분야 인용 가능한 검증 사실과 증거 원본을 분리 동봉. / *2 references separating verified facts from their evidentiary sources across all 11 disciplines.*
+- **할루시네이션 방지 / Anti-hallucination** — 11분야 통계·연구·인물 인용은 *verified-facts.md* 등재만 허용, 웹 검색 결과는 출처·접근 일자 명시. / *Statistics, studies, and figures across 11 disciplines are bounded by the verified-facts catalog; web-search additions must carry source and access date.*
+
 ---
 
 ### ✍️ 카테고리 4. 설교문 작성 & 기획 · Sermon Writing & Planning
 
-#### 15. `sermon-topic-message-coach`
+*v1.1.0 검증 5/5 · 신규 references 3개 (`sermon-topic-message-coach`·`sermon-doctrinal-planner`·`sermon-calvin-style-insight`)*
+*Verified 5/5 in v1.1.0 · 3 new reference folders (`sermon-topic-message-coach`, `sermon-doctrinal-planner`, `sermon-calvin-style-insight`)*
+
+#### 15. `sermon-topic-message-coach`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 설교 주제 설정과 핵심 메시지 정립이 막힌 설교자를 **6단계 대화**로 코칭하는 인터랙티브 스킬. (1) 주제 명확화 → (2) 목적 구체화 → (3) 핵심 메시지 5개 추천 → (4) 메시지 선택과 핵심 단어 → (5) 성경 구절·사건 5개씩 → (6) 7가지 설교 작성법 중 선택과 목차.
@@ -639,6 +728,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 6단계 대화형 코칭 / *Six-step Socratic dialogue.*
 - 7가지 설교 작성법(세 요점/내러티브/텍스트-주석/주제별/교리/연극 전달/칼빈식) / *7 sermon forms (three points / narrative / text-commentary / topical / doctrinal / dramatic / Calvinian).*
 - 본문·주제가 정해진 *후*의 다른 스킬들과 역할 분리 / *Distinct from skills used after topic is set.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT 1라운드 정밀 검증. / *1 verification round (TEST-REPORT).*
+- **참조 자료 / References** — v1.1.0 신규 references 4종 (`message-diversity-framework.md`·`sermon-styles-taxonomy.md`·`theological-safety-guide.md`·`anti-hallucination-checklist.md`). / *4 new references in v1.1.0: message diversity framework, sermon styles taxonomy, theological safety guide, anti-hallucination checklist.*
+- **할루시네이션 방지 / Anti-hallucination** — 메시지 추천 5개는 *message-diversity-framework.md*의 결을 모두 커버, 7가지 작성법은 *sermon-styles-taxonomy.md* 정의 외 분류 금지. / *The five candidate messages must span the diversity framework; the seven sermon forms are bounded by the taxonomy — no ad-hoc categories allowed.*
 
 ---
 
@@ -658,9 +752,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 짧고 간결·반복 회피·리듬·수사·언어 다양성의 5가지 기술 / *Five techniques: brevity, anti-repetition, rhythm, rhetoric, lexical diversity.*
 - 신학·전통과 무관하게 *글쓰기 자체*를 코칭 / *Tradition-agnostic — focuses on writing craft itself.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — PROMPT-TEST-REPORT + V2·V3·V4·V5 총 5라운드 프롬프트 정밀 검증. / *5 verification rounds (PROMPT-TEST-REPORT + V2/V3/V4/V5).*
+- **참조 자료 / References** — references 3종 (`sentence-techniques.md`·`paragraph-techniques.md`·`whole-sermon-techniques.md`) — 문장·문단·전체 3계층 글쓰기 기술을 v1.1.0에서 보강. / *3 references covering sentence/paragraph/whole-sermon techniques — substantially expanded in v1.1.0.*
+- **할루시네이션 방지 / Anti-hallucination** — 글쓰기 자체 코칭이므로 신학·통계 인용을 직접 생성하지 않으며, 인용은 사용자 초안에 등장한 것만 다룸. / *Craft-only coaching — does not introduce theological or statistical claims; only handles citations already present in the user's draft.*
+
 ---
 
-#### 17. `sermon-doctrinal-planner`
+#### 17. `sermon-doctrinal-planner`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 본문 또는 핵심 명제를 받아 **체계적 교리설교(*doctrinal preaching*) 기획안**을 자동 생성. 본문 분석 → 교리 함의 → 역사적 정립(니케아·웨스트민스터·하이델베르크) → **교리설교 4단계 구조**(본문 → 교리 진술 → 변증/오해 교정 → 적용) → 실생활 적용 → 추가 자료.
@@ -676,9 +775,14 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 역사적 신경·표준 자동 참조 / *Auto-references historic creeds and confessional standards.*
 - 적용·자료까지 한 번에 산출 / *Application and resources included.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + TEST-REPORT-R3 2라운드 정밀 검증. / *2 verification rounds (TEST-REPORT + R3).*
+- **참조 자료 / References** — v1.1.0 신규 references 6종 (`creeds-and-confessions.md`·`doctrine-by-locus.md`·`text-to-doctrine-mapping.md`·`orthodox-vs-heretical-propositions.md`·`standard-bibliography.md`·`anti-hallucination-checklist.md`) — 카테고리 4에서 가장 풍부. / *6 new references in v1.1.0 — the richest in this category: creeds/confessions, doctrine by locus, text-to-doctrine mapping, orthodox-vs-heretical propositions, standard bibliography, anti-hallucination checklist.*
+- **할루시네이션 방지 / Anti-hallucination** — 신경·신앙고백 인용은 *creeds-and-confessions.md*, 정통/이단 구분은 *orthodox-vs-heretical-propositions.md*에 등재된 명제만 허용. / *Creed and confession citations are bounded by `creeds-and-confessions.md`; orthodox/heretical labels are bounded by the proposition catalog.*
+
 ---
 
-#### 18. `sermon-calvin-style-insight`
+#### 18. `sermon-calvin-style-insight`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 칼빈의 **설교 스타일** 자체를 연구하고 **칼빈식 설교문**을 작성하도록 돕는 개혁주의 설교 도우미. *lectio continua*(연속 강해)·본문 충실성·교리/주해/적용 통합·절제된 수사·목회적 직설.
@@ -692,6 +796,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 **핵심 기능 / Key features**
 - 칼빈의 *설교* 영역 (#8 `sermon-calvin-institutes`는 *조직신학*) / *Owns Calvin's preaching (vs. #8 which owns dogmatics).*
 - 본문·교리·적용을 한 흐름에 엮는 통합형 / *Integrates text, doctrine, and application in one flow.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + TEST-REPORT-V2 2라운드 정밀 검증. / *2 verification rounds (TEST-REPORT + V2).*
+- **참조 자료 / References** — v1.1.0 신규 references 4종 (`calvin-preaching-principles.md`·`calvin-sermon-bibliography.md`·`calvin-sermon-corpus-facts.md`·`common-misreadings.md`). / *4 new references in v1.1.0: preaching principles, verified sermon bibliography, sermon corpus facts, common misreadings.*
+- **할루시네이션 방지 / Anti-hallucination** — 칼빈 설교 인용은 *calvin-sermon-bibliography.md*·*calvin-sermon-corpus-facts.md* 등재 본문만 허용 (조직신학 인용은 #8 스킬 영역). / *Calvin sermon quotations are bounded by the verified sermon bibliography and corpus facts; dogmatic quotations belong to skill #8.*
 
 ---
 
@@ -711,11 +820,19 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 절기·트렌드 자동 반영 / *Liturgical calendar + Korean-church trends auto-injected.*
 - 설교 준비 시간 단축 + 신학적 균형 / *Shortens prep time, preserves balance.*
 
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT V1~V8 총 8라운드 다라운드 정밀 검증. / *8 verification rounds (V1–V8).*
+- **참조 자료 / References** — references 4종 (`hymn_themes.md`·`keyword_themes.md`·`liturgical_calendar.md`·`korean_church_trends.md`) — v1.1.0에서 찬송 주제·키워드·교회력을 대폭 보강. / *4 references — hymn themes, keyword themes, liturgical calendar, and Korean-church trends — substantially expanded in v1.1.0.*
+- **할루시네이션 방지 / Anti-hallucination** — 찬송가는 *hymn_themes.md*에 등재된 곡만 추천 (가공된 곡명·찾을 수 없는 번호 차단), 절기는 *liturgical_calendar.md* 외 임의 신설 금지. / *Hymn recommendations are bounded by `hymn_themes.md` — no fabricated titles or numbers; liturgical dates are bounded by `liturgical_calendar.md`.*
+
 ---
 
 ### 🙏 카테고리 5. 큐티 & 검증 · QT & Validation
 
-#### 20. `sermon-qt-original-text-based`
+*v1.1.0 검증 2/2 · 신규 references 1개 (`sermon-qt-original-text-based`)*
+*Verified 2/2 in v1.1.0 · 1 new reference folder (`sermon-qt-original-text-based`)*
+
+#### 20. `sermon-qt-original-text-based`  *(+references in v1.1.0)*
 
 **무엇이냐 / What it is**
 - **KO** — 성경 본문을 받아 **원어 분석 기반의 완성된 큐티(QT)** 를 자동 생성. **'생명의 삶'·'매일성경' 스타일**의 짧은 설교형 구조 — (1) 신문기사·시·영화·도서 등 **예화 기반 서론** (웹 검색 활용), (2) 헬라어/히브리어 원문 분석과 발음(영어·한글), (3) **3대지 구성(한 대지는 반드시 원문 핵심 의미)**, (4) 적용과 오늘의 기도.
@@ -730,6 +847,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 출력 3단계: 간단/표준/상세 설교형 / *3 output levels: brief / standard / sermon-style.*
 - 한국어 개역개정 기본 / *Korean Revised Version as default.*
 - 예화 서론에 웹 검색으로 최신 자료 활용 / *Web search powers the illustration intro.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — TEST-REPORT + ROUND3·ROUND4 + `test-outputs/` 실제 산출물 보존 3라운드 정밀 검증. / *3 verification rounds (TEST-REPORT + ROUND3/4) with `test-outputs/` preserving real artifacts.*
+- **참조 자료 / References** — v1.1.0 신규 references 5종 (`original-language-transliteration-standard.md`·`krv-vs-gae-differences.md`·`verified-key-passage-data.md`·`common-misapplication-cases.md`·`qt-self-verification-checklist.md`). / *5 new references in v1.1.0: transliteration standard, KRV-vs-GAE differences, verified key passages, common misapplication cases, QT self-verification checklist.*
+- **할루시네이션 방지 / Anti-hallucination** — 원어 음역은 *original-language-transliteration-standard.md* 외 임의 표기 금지, 예화는 웹 검색 출처·접근 일자 명시, 적용은 *common-misapplication-cases.md*로 자가 점검. / *Transliteration is bounded by the standard; illustrations from web search require source + access date; applications are self-checked against the misapplication catalog.*
 
 ---
 
@@ -748,6 +870,11 @@ Each skill is documented in three sections — *What it is*, *When to use*, *Key
 - 4가지 호출 패턴: 단일 페르소나 / 다중 비교 / 추천형 / 전체 8명 라운드 / *4 invocation patterns: single / multi-compare / recommended / full 8-person round.*
 - 거룩한 척하지 않는 *진짜 영혼의 반응* — 반발·위로·의심·결단 / *Unsanitized soul-reactions — pushback, comfort, doubt, resolve.*
 - 다른 스킬이 *설교자·신학자·작가* 시각이라면, 본 스킬은 *듣는 영혼* 시각 / *Other skills give pastor/theologian/writer angles; this one gives the listener's soul.*
+
+**v1.1.0 정밀 검증 / Verification (v1.1.0)**
+- **검증 라운드 / Rounds** — SKILL_TEST_RESULTS V1·V2·V3·V4 총 4라운드 정밀 검증. / *4 verification rounds (V1–V4).*
+- **참조 자료 / References** — 별도 references 폴더 대신 `personas/` 폴더에 8명 페르소나 프로필이 자료원으로 동봉 — v1.0.0 검증으로 정합 상태, v1.1.0 사이클에서 별도 갱신 없음. / *Instead of a `references/` folder, the `personas/` folder ships the 8 profile documents as the data source — verified in v1.0.0, no v1.1.0 changes required.*
+- **할루시네이션 방지 / Anti-hallucination** — 두 가지 출처(`personas/` 등재 내용 + 사용자가 제공한 설교 텍스트)에서만 응답 길어 올림, 페르소나 파일에 없는 인명·회사·구체 사건을 단언하지 않음 (G1~G10 규약). / *Responses draw only from two sources — the persona files and the user-supplied sermon — and never assert names/companies/events not in the persona files (the G1–G10 protocol).*
 
 ---
 
