@@ -1100,7 +1100,7 @@ cys-claude-sermon-skills/
 
 **최윤식 박사** · *Dr. Choi Yoon-sik*
 
-- **미래학자 / Futurist** — 아시아미래인재연구소 소장 / *Director, Asia Institute for Future Talent (亞細亞未來人材硏究所).*
+- **전문 미래학자 / Professional Futurist** — 아시아미래인재연구소 소장 / *Director, Asia Institute for Future Talent (亞細亞未來人材硏究所).*
 - **목회자 / Pastor** — 前 소망과사랑의교회 담임목사 / *Former senior pastor, Hope and Love Church.*
 - **사역 영역 / Areas of work** — 미래학·경영전략 컨설팅, 설교·목회 사역, 그리스도인의 시대 분별 / *Futures studies & strategy consulting, preaching & pastoral ministry, discernment of the times for Christians.*
 
