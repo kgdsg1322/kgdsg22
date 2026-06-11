@@ -12,13 +12,10 @@ description: [TLDR] sermon-image-design(마스터)의 2번 하위 스킬. scene-
 
 매핑표의 모든 장면을 **일관된 화풍의 1280×720 JPG**로 만든다. 이미지 안에 글자는 넣지 않는다(순수 그림).
 
-## 1. 엔진 자동 탐지
+## 1. 엔진 확정 (결정론 — 직접 추론 금지)
 
-```bash
-# 우선순위: Gemini → OpenAI → SVG 폴백
-[ -n "$GEMINI_API_KEY" ] && echo "GEMINI"
-[ -n "$OPENAI_API_KEY" ] && echo "OPENAI"
-```
+엔진은 마스터 preflight JSON의 `engine` 값을 그대로 사용한다(`gemini` / `openai` / `svg`).
+환경변수를 다시 해석하거나 기억으로 판단하지 않는다. preflight 결과가 없으면 마스터에 preflight 실행을 요청한다.
 
 | 경로 | 방법 | 일관성 전략 |
 |------|------|-------------|
@@ -52,15 +49,15 @@ description: [TLDR] sermon-image-design(마스터)의 2번 하위 스킬. scene-
 
 `references/svg-symbol-templates.md`의 심볼 패턴(`#jesus` `#sheep` `#sun` `#sky` 등)을 기반으로 작성.
 
-**qlmanage 정사각 렌더 버그 해결책(검증된 교훈):** qlmanage는 16:9 SVG를 1280×1280 정사각에 맞춰
-확대해 우측 객체가 잘린다. → SVG 캔버스를 **1280×1280 정사각으로 작성**(상하 패딩 영역에 하늘·땅 연장)
-후 중앙 1280×720 크롭.
+**SVG 캔버스 규약:** 1280×1280 정사각 + `viewBox="0 -280 1280 1280"` 패딩(본 장면은 y=0~720)으로 작성한다
+— qlmanage가 16:9를 정사각에 맞춰 확대해 우측이 잘리는 버그의 검증된 해결책.
 
+**렌더는 반드시 결정론 스크립트로 (수기 명령 입력 금지):**
 ```bash
-qlmanage -t -s 1280 -o . scene.svg     # SVG → 1280×1280 PNG
-sips -c 720 1280 scene.svg.png          # 중앙 크롭 → 1280×720
-sips -s format jpeg -s formatOptions 92 scene.svg.png --out 01_장면명.jpg
+bash <scripts_dir>/render_svg.sh <프로젝트폴더>/svg/NN_장면명.svg <프로젝트폴더>/jpg/NN_장면명.jpg
 ```
+스크립트가 `<text>` 태그 차단·정사각 크롭·JPEG 92 변환·1280×720 규격 실측까지 일괄 수행한다.
+`FAIL` 출력이면 SVG를 수정해 재실행한다.
 
 ## 5. 산출 규격
 
@@ -72,7 +69,16 @@ sips -s format jpeg -s formatOptions 92 scene.svg.png --out 01_장면명.jpg
 | 위치 | `<프로젝트 폴더>/jpg/` (SVG 경로 시 원본은 `svg/`) |
 | 프롬프트 기록 | `<프로젝트 폴더>/prompts/NN_장면명.md` — 사용 엔진·모델 ID·전체 프롬프트·레퍼런스 사용 내역 |
 
-## 6. 재생성 모드 (verification FAIL 시)
+## 6. 산출 직후 기계 검증 (생략 불가)
+
+전 장면 생성 완료 즉시 실행:
+```bash
+python3 <scripts_dir>/verify_images.py <프로젝트폴더> <프로젝트폴더>/매핑표.md
+```
+파일 존재·1280×720 JPEG 규격·SVG `<text>` 금지·prompts 금지어가 기계 판정된다.
+`FAIL` 항목을 전부 해소(재생성·프롬프트 수정)하고 **PASS가 나올 때까지 verification 단계로 넘기지 않는다.**
+
+## 7. 재생성 모드 (verification FAIL 시)
 
 - 수정 지시서에 명시된 **해당 이미지만** 다시 만든다. 통과한 이미지 재생성 금지.
 - 수정 사유를 프롬프트에 반영하고, 스타일 앵커·캐릭터 레퍼런스는 유지한다.

@@ -6,14 +6,19 @@
 - 발동: sermon-image-design (마스터) | 입력: 설교문_선한목자.docx | 분류: 요 10:11 선한 목자 — "예수님은 나를 아시고 지키시는 목자"
 - 사이클: 기획 → 생성(엔진: SVG 폴백 — API 키 미탐지) → 검증(2라운드) → 패키징
 
-| # | 시점 | 하위 스킬 / 에이전트 | 임무 | 결과 |
+| # | 시점* | 하위 스킬 / 에이전트 | 임무 | 결과 |
 |---|------|---------------------|------|------|
-| 1 | 14:02 | scene-planning | 설교문 정독·장면 기획 | 6장 확정, 매핑표 초안 |
-| 2 | 14:11 | generation | 이미지 생성 (SVG→JPG) | 6장 산출 |
-| 3 | 14:25 | verification (독립 에이전트) | 5항목 게이트 R1 | PASS 5 / FAIL 1 (04번 V5) |
-| 4 | 14:29 | generation (재생성 모드) | 04번만 수정 | 04_r2 산출 |
-| 5 | 14:34 | verification (독립 에이전트) | R2 재검증 | 전량 PASS |
-| 6 | 14:41 | packaging | PPTX·mp4·문서 조립 | 완료 (ffmpeg OK) |
+| 1 | 14:01 | preflight.py | 날짜·엔진·폴더 확정 | OK (engine: svg) |
+| 2 | 14:02 | scene-planning | 설교문 정독·장면 기획 | 6장 확정, 매핑표 초안 |
+| 3 | 14:09 | validate_mapping.py | 인용 실재·패턴 기계 게이트 | PASS (6행) |
+| 4 | 14:11 | generation | 이미지 생성 (render_svg.sh) | 6장 산출 |
+| 5 | 14:23 | verify_images.py | 규격·금지어 기계 게이트 | PASS |
+| 6 | 14:25 | verification (독립 에이전트) | 5항목 게이트 R1 | PASS 5 / FAIL 1 (04번 V5) |
+| 7 | 14:29 | generation (재생성 모드) | 04번만 수정 | 04_r2 산출 |
+| 8 | 14:34 | verification (독립 에이전트) | R2 재검증 | 전량 PASS |
+| 9 | 14:41 | packaging | build_pptx.py·build_motion.py | 완료 (ffmpeg OK) |
+
+*시점은 `date +%H:%M` 실측값 — 추정 기입 금지.
 
 ## 📦 하위 스킬 산출물
 
